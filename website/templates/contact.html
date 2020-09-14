@@ -11,7 +11,7 @@
 
 {% block content %}
 
-
+	
 	
 	<section class="hero-wrap hero-wrap-2" style="background-image: url('{% static 'website/images/bg_3.jpg' %}');" data-stellar-background-ratio="0.5">
 		<div class="overlay"></div>
@@ -27,9 +27,42 @@
 
 	{% if message_name %}
     <center>
+    	<section class="ftco-appointment ftco-section img" style="background-image: url({% static 'website/images/bg_2.jpg' %});">
+		<div class="overlay"></div>
+		<div id="msg">
+			<style>
+
+			#msg h2{
+				text-align: left;
+				padding-left: 20px;
+				text-shadow: 2px;
+				color: black;
+				-webkit-text-stroke: 1px black;
+			   color: #1cb5e0;
+			   text-shadow:
+			       3px 3px 0 #000,
+			     -1px -1px 0 #000,  
+			      1px -1px 0 #000,
+			      -1px 1px 0 #000,
+			       1px 1px 0 #000;
+			}
+			#msg h4{
+				text-align: left;
+				padding-left: 20px;
+				text-shadow: 2px;
+				color: #050a20;
+			}
+			#msg h5{
+				text-align: left;
+				padding-left: 20px;
+				text-shadow: 2px;
+				color: blue;
+			}
+				
+			</style>
       <h2>Thanks {{ message_name }} !</h2>
-      <p> We got your email and will respond shortly.</p>
-      <p><a href="{% url 'index' %}">Explore More!</a></p>
+      <h4> We got your email and will respond shortly.</h4>
+      <h5><a href="{% url 'index' %}">Explore More!</a></h5>
     </center>
     <br/>/<br><br/><br/>
   {% else %}

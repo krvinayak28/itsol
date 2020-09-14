@@ -8,7 +8,28 @@ from django.views.generic.edit import CreateView # new
 
 
 def index(request):
-	return render(request, 'index.html', {})
+	if request.method == 'POST':
+		message_name  = request.POST['message-name']
+		message_email = request.POST['message-email']
+		# subject= request.POST['subject']
+		# tel=request.POST['tel']
+		message = request.POST['message']
+
+		#send mail
+		#localhost server ---python -m smtpd -n -c DebuggingServer localhost:1025
+
+		send_mail( 
+		    'Message from ---- ' + message_name , #subject
+		    'Message --- '+ message + "\n " + 'Sender Email --- ' + message_email  + "\n" , #message
+		    message_email, #from email
+		    #['config(EMAIL_HOST_USER)' ] , #to mail, 2nd copy
+		    ['kmrvinayak28@gmail.com']
+
+		     )
+		return render(request, 'index.html', {'message_name': message_name })
+
+	else:
+		return render(request, 'index.html', {})
 
 
 def contact(request):
