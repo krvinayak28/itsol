@@ -8429,7 +8429,8 @@ h1, h2, h3, h4, h5,
     .hero-wrap.hero-wrap-2 .overlay {
       height: 600px;
       width: 100%;
-      background: #212cc5;
+      /* background: #212cc5; */
+      background: green;
       opacity: .6; }
     .hero-wrap.hero-wrap-2 .slider-text {
       height: 600px; }
@@ -9858,3 +9859,10 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+
+
+.filter-green{
+        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(86deg) brightness(118%) contrast(119%);
+        width: 70px;
+    }
