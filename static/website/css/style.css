@@ -1443,7 +1443,9 @@ pre {
 .table-warning,
 .table-warning > th,
 .table-warning > td {
-  background-color: #ffeeba; }
+  /* background-color: #ffeeba; } */
+  background-color: #33F6FF;
+  }
 
 .table-warning th,
 .table-warning td,
@@ -4274,7 +4276,9 @@ input[type="button"].btn-block {
 .alert-warning {
   color: #856404;
   background-color: #fff3cd;
-  border-color: #ffeeba; }
+  /* border-color: #ffeeba; } */
+  border-color: #33F6FF;
+  }
   .alert-warning hr {
     border-top-color: #ffe8a1; }
   .alert-warning .alert-link {
@@ -4582,7 +4586,9 @@ input[type="button"].btn-block {
 
 .list-group-item-warning {
   color: #856404;
-  background-color: #ffeeba; }
+  /* background-color: #ffeeba; } */
+  background-color: #33F6FF;
+  }
   .list-group-item-warning.list-group-item-action:hover, .list-group-item-warning.list-group-item-action:focus {
     color: #856404;
     background-color: #ffe8a1; }
@@ -8233,7 +8239,7 @@ h1, h2, h3, h4, h5,
         padding-top: 1rem;
         padding-bottom: 1rem; }
         .ftco-navbar-light .navbar-brand span {
-          color: #ffa41b; } }
+          color: #489e81; } }
   @media (max-width: 991.98px) {
     .ftco-navbar-light .navbar-nav {
       padding-bottom: 20px;
@@ -8300,8 +8306,8 @@ h1, h2, h3, h4, h5,
       background: #323edd;
       border: 1px solid #323edd; }
   .ftco-navbar-light .navbar-nav > .nav-item.cta.cta-colored a {
-    border: 1px solid #ffa41b;
-    background: #ffa41b !important; }
+    border: 1px solid #489e81;
+    background: #489e81 !important; }
   .ftco-navbar-light .navbar-nav > .nav-item.active > a {
     color: #323edd; }
   @media (max-width: 991.98px) {
@@ -8390,7 +8396,7 @@ h1, h2, h3, h4, h5,
       padding-top: 1rem;
       padding-bottom: 1rem; }
       .ftco-navbar-light.scrolled .navbar-brand span {
-        color: #ffa41b; }
+        color: #489e81; }
 
 .navbar-brand {
   font-weight: 900;
@@ -8476,15 +8482,28 @@ h1, h2, h3, h4, h5,
 .slider-text .bread {
   font-weight: 700; }
 
+.blink_me {
+  /*animation: blinker 1s linear infinite;*/
+  animation: blinker 1.7s cubic-bezier(.5, 0, 1, 1) infinite alternate; 
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
 @media (min-width: 992px) {
   .ftco-intro {
     margin-top: -200px; } }
 
 .ftco-intro .services-1 {
-  background: #323edd;
+  /*background: #323edd;*/
+  background: #736EFE;
   width: 100%;
   padding: 20px;
   position: relative;
+  border-radius: 25px !important;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
@@ -8550,21 +8569,21 @@ h1, h2, h3, h4, h5,
     color: #fff;
     font-size: 16px; }
   .ftco-intro .services-1.color-1 {
-    background: #2430d7; }
+    background: #002661; }
   .ftco-intro .services-1.color-2 {
     background: #222ece; }
   .ftco-intro .services-1:hover {
     background: #202bc1; }
     .ftco-intro .services-1:hover:after, .ftco-intro .services-1:hover:before {
       height: 30px;
-      background: #ffa41b; }
+      background: #489e81; }
     .ftco-intro .services-1:hover .line:before, .ftco-intro .services-1:hover .line:after {
       width: 30px;
-      background: #ffa41b; }
+      background: #489e81; }
     .ftco-intro .services-1:hover .icon span {
-      color: #ffa41b; }
+      color: #489e81; }
     .ftco-intro .services-1:hover h3 {
-      color: #ffa41b; }
+      color: #489e81; }
 
 .bg-light {
   background: #f8f9fa !important; }
@@ -8760,7 +8779,7 @@ h1, h2, h3, h4, h5,
       font-weight: 700;
       color: #fff; }
   .services:hover {
-    background: #ffa41b; }
+    background: #489e81; }
     .services:hover:before, .services:hover:after {
       height: 30px; }
     .services:hover .line:before, .services:hover .line:after {
@@ -8870,7 +8889,7 @@ h1, h2, h3, h4, h5,
   background-color: #fff; }
 
 .ftco-faqs .card-body {
-  background: #ffa41b;
+  background: #489e81;
   color: rgba(255, 255, 255, 0.9);
   margin-bottom: 10px;
   border-radius: 30px;
@@ -9007,7 +9026,7 @@ textarea.form-control {
     font-size: 20px;
     font-weight: 700; }
     .ftco-footer .ftco-footer-logo span {
-      color: #ffa41b; }
+      color: #489e81; }
   .ftco-footer .ftco-footer-widget h2 {
     font-weight: normal;
     color: #fff;
@@ -9063,7 +9082,7 @@ textarea.form-control {
     .ftco-footer-social li a:hover {
       color: #fff; }
       .ftco-footer-social li a:hover span {
-        color: #ffa41b !important; }
+        color: #489e81 !important; }
 
 .wrapper {
   width: 100%; }
@@ -9189,7 +9208,7 @@ textarea.form-control {
   font-size: 40px;
   color: #fff; }
   .heading-section.heading-section-white h2 span {
-    color: #ffa41b; }
+    color: #489e81; }
 
 .heading-section.heading-section-white p {
   color: rgba(255, 255, 255, 0.9); }
@@ -9237,7 +9256,7 @@ textarea.form-control {
       position: relative;
       color: #fff; }
       .testimony-section .owl-carousel .owl-stage-outer .owl-item.active.center .testimony-wrap .text .name {
-        color: #ffa41b; }
+        color: #489e81; }/*Name tag Color*/
       .testimony-section .owl-carousel .owl-stage-outer .owl-item.active.center .testimony-wrap .text .line {
         position: absolute;
         top: 0;
@@ -9250,7 +9269,7 @@ textarea.form-control {
           content: '';
           width: 20%;
           height: 4px;
-          background: #ffa41b;
+          background: #489e81;
           -moz-transition: all 1.5s ease;
           -o-transition: all 1.5s ease;
           -webkit-transition: all 1.5s ease;
@@ -9268,7 +9287,7 @@ textarea.form-control {
         width: 4px;
         height: 20%;
         background: rgba(255, 255, 255, 0.7);
-        background: #ffa41b;
+        background: #489e81;
         -moz-transition: all 1.5s ease;
         -o-transition: all 1.5s ease;
         -webkit-transition: all 1.5s ease;
@@ -9343,7 +9362,7 @@ textarea.form-control {
       border-radius: 50%;
       background: rgba(0, 0, 0, 0.1); }
       .testimony-section .owl-dots .owl-dot.active {
-        background: #ffa41b; }
+        background: #489e81; }
 
 .testimony-wrap {
   background-size: cover;
@@ -9592,7 +9611,7 @@ textarea.form-control {
     margin-bottom: 4px;
     font-weight: 400; }
     .block-27 ul li a, .block-27 ul li span {
-      color: #ffa41b;
+      color: #489e81;
       text-align: center;
       display: inline-block;
       width: 40px;
@@ -9601,7 +9620,7 @@ textarea.form-control {
       border-radius: 50%;
       border: 1px solid #cccccc; }
     .block-27 ul li.active a, .block-27 ul li.active span {
-      background: #ffa41b;
+      background: #489e81;
       color: #fff;
       border: 1px solid transparent; }
 

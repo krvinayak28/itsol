@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+a:hover {
+  background-color: yellow;
+}
+.btn-grad {
+  padding:15px;
+  background-image: linear-gradient(to right, #2b5876 0%, #4e4376  51%, #2b5876  100%);
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    text-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 0 20px #eee;
+    display: block;
+}
+.btn-grad:hover { 
+  background-position: right center; 
+}
+
+</style>
+</head>
+<body>
+
+<h1 class="btn-grad">
+Hello this is something else</h2>
+<button class="btn-grad">Submit</button>
+
+<ul>
+<li><button class="btn-grad">Submit</button></li>
+<li><button class="btn-grad">Submit</button></li>
+<li><button class="btn-grad">Submit</button></li>
+<li><button class="btn-grad">Submit</button></li>
+</ul>
+</body>
+</html>
