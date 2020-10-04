@@ -27,7 +27,277 @@
     </div>
   </section>
 
+
+<style type="text/css" media="screen">
+  
+  section{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+
+  }
+
+  #containercard {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+
+  #containercard .box {
+
+    position: relative;
+    width: 300px;
+    padding: 40px;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+    border-radius: 4px;
+    margin: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
+
+  }
+
+  #containercard .box .icon {
+
+    position: relative;
+    width:80px;
+    height: 80px;
+    color: #fff;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 50%;
+    font-size: 40px;
+    font-weight: 700;
+    transition: 1s;
+
+  }
+
+  #containercard .box:nth-child(1) .icon {
+
+    box-shadow: 0 0 0 #2d3260;
+    background: #2d3260;
+  }
+
+  #containercard .box:nth-child(1):hover .icon {
+
+    box-shadow: 0 0 0 400px #008080;
+    
+  }
+
+  #containercard .box:nth-child(2) .icon {
+
+    box-shadow: 0 0 0 #219ecf;
+    background: #219ecf;
+  }
+
+  #containercard .box:nth-child(2):hover .icon {
+
+    box-shadow: 0 0 0 400px #138EA1;
+    
+  }
+
+  #containercard .box:nth-child(3) .icon {
+
+    box-shadow: 0 0 0 #219;
+    background: #b275bc;
+  }
+
+  #containercard .box:nth-child(3):hover .icon {
+
+    box-shadow: 0 0 0 400px #1a5173;
+    
+  }
+
+  #containercard .box:nth-child(4) .icon {
+
+    box-shadow: 0 0 0 #008080;
+    background: #008080;
+  }
+
+  #containercard .box:nth-child(4):hover .icon {
+
+    box-shadow: 0 0 0 400px #1c92d2;
+    
+  }
+
+  #containercard .box:nth-child(5) .icon {
+
+    box-shadow: 0 0 0 #085F98;
+    background: #1d424f;
+      /*background: linear-gradient(to right, #74ebd5, #acb6e5)*/;
+  }
+
+  #containercard .box:nth-child(5):hover .icon {
+
+    box-shadow: 0 0 0 400px #085F98;
+    
+  }
+
+  #containercard .box:nth-child(6) .icon {
+
+    box-shadow: 0 0 0 #138EA1;
+    background: #6a5462;
+  }
+
+  #containercard .box:nth-child(6):hover .icon {
+
+    box-shadow: 0 0 0 400px #219ecf;
+    
+  }
+
+  #containercard .box .content {
+
+    position: relative;
+    z-index: 1;
+    transtion: 0.5s;
+  }
+
+  #containercard .box:hover .content{
+
+    /*background: #fff;*/
+    color: #fff;
+  }
+
+
+  #containercard .box .content h3 {
+
+    font-size: 20px;
+    margin: 10px 0;
+    padding: 0;
+  }
+
+  #containercard .box .content p {
+
+    margin:  0;
+    padding: 0;
+  }
+
+  .content a {
+
+    display: inline-block;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #000;
+    font-weight:500;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+  }
+
+  #containercard .box:before {
+
+     content: '';
+     width: 50%;
+     height: 100%;
+     position: absolute;
+     top: 0;
+     left:0;
+     background: rgba(255,255,255,.2);
+     z-index: 2;
+     pointer-events: none;
+  }
+
+  .filter-green{
+        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(86deg) brightness(118%) contrast(119%);
+        width: 70px;
+    }
+
+</style>
+
+
+
+
+
+<section>
+  
+
+  <div class="container" id="containercard">
+    <div class="box">
+      <div class="icon">
+        <span><img src="{% static 'website/images/touchxp.svg' %}" class="filter-green" alt=""></span>
+      </div>
+      <div class="content">
+        <h3>UI/UX</h3>
+          <p>You Need User Interface!<br> No Problem! We are Here.</p>
+        <a href="javascript:void(0);" title="" id="con_a">Read More</a>
+      </div>
+      </div>
+
+      <div class="box">
+        <div class="icon">
+          <span><img src="{% static 'website/images/mobile.svg' %}" class="filter-green" alt=""></span>
+        </div>
+        <div class="content">
+          <h3>App Development</h3>
+        <p>Our Professional team robust and scalable mobile app development services for iPhone, iPad and Android platform.</p>
+          <a href="javascript:void(0);" title="It will work later on!" id="con_a">Read More</a>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="icon">
+          <span><img src="{% static 'website/images/software.svg' %}" class="filter-green" alt=""></span>
+        </div>
+        <div class="content">
+          <h3>Software Development</h3>
+          <p>We develop what you need!</p>
+          <a href="javascript:void(0);" title="It will work later on!" id="con_a">Read More</a>
+        </div>
+      </div>
+
+
+      <div class="box">
+        <div class="icon">
+          <span><img src="{% static 'website/images/thumbs-up.svg' %}" class="filter-green" alt=""></span>
+        </div>
+        <div class="content">
+          <h3>Digital Marketing</h3>
+          <p>Give Your Business Wings to Fly with Our Digital Marketing Solutions</p>
+          <a href="javascript:void(0);" title="It will work later on!" id="con_a">Read More</a>
+        </div>
+      </div>
+
+
+      <div class="box">
+        <div class="icon">
+          <span class="flaticon-secure"></span></div>
+        <div class="content">
+          <h3>Network Security</h3>
+          <p>We help to secure every thing!</p>
+          <a href="javascript:void(0);" title="It will work later on!" id="con_a">Read More</a>
+        </div>
+      </div>
+
+
+      <div class="box">
+        <div class="icon">
+          <span class="flaticon-stats"></span>
+        </div>
+        <div class="content">
+          <h3>Artificial Intelligence</h3>
+          <p>From a Business Perspective
+              We innovate your company with AI</p>
+          <a href="javascript:void(0);" title="It will work later on!" id="con_a">Read More</a>
+        </div>
+      </div>
+    </div>
+
+
+</section>
+
 <!-- Services.html start-->
+{% comment %} 
   <section class="ftco-section services-section">
     <div class="container"><!-- style="background-image: url({% static 'website/images/bg_4.jpg' %});"-->
       <div class="row justify-content-center pb-5">
@@ -312,6 +582,7 @@
       </div>
     </div>
   </section>
+{% endcomment %}
 
   <style type="text/css" media="screen">
 
