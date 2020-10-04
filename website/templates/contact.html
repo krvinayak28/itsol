@@ -80,7 +80,7 @@
 			</style>
       <h2>Thanks {{ message_name }} !</h2>
       <h4> We got your email and will respond shortly.</h4>
-      <h5 class="btn-grad"><a href="{% url 'index' %}" style="color:red;">Explore More!</a></h5>
+      <h5 class="btn-grad"><a href="{% url 'index' %}" style="color:White;">Explore More!</a></h5>
       <br><br><br>
     </center>
   {% else %}
@@ -97,7 +97,10 @@
 										<span class="fa fa-map-marker"></span>
 									</div>
 									<div class="text">
-										<p><span>Address:</span> Praneet Towers, Jharkhand</p>
+										<p><span>Address 1:</span> Mahagun Mywoods, Gaur City-2,<br>
+								Greater Noida sec 16 C, UP 201009.</p>
+										<p><span>Address 2:</span> Anand Smiriti" Shivaji Nagar Makhdumpur Bagicha
+								Digha ghat, <br>Patna 800011 </p>
 									</div>
 								</div>
 							</div>
@@ -107,7 +110,11 @@
 										<span class="fa fa-phone"></span>
 									</div>
 									<div class="text">
-										<p><span>Phone:</span> <a href="tel://1234567920">+ 1235 2355 98</a></p>
+										<p><span>Phone:</span> 
+											<a href="tel:+91 7000751749">
+												<span class="text">+91 7000751749</span>
+											</a>
+										</p>
 									</div>
 								</div>
 							</div>
@@ -117,7 +124,7 @@
 										<span class="fa fa-paper-plane"></span>
 									</div>
 									<div class="text">
-										<p><span>Email:</span> <a href="mailto:kmrvinayak28@gmail.com">Vinayak Kumar</a></p>
+										<p><span>Email:</span> <a href="mailto:encodernapps@gmail.com">EncoderNApps</a></p>
 									</div>
 								</div>
 							</div>
@@ -144,36 +151,36 @@
 											<div class="col-md-6">
 												<div class="form-group">
 													<label class="label" for="name">Full Name</label>
-													<input type="text" class="form-control" name="message-name" id="name" placeholder="Name">
+													<input type="text" class="form-control" name="message-name" id="name" placeholder="Name" required>
 												</div>
 											</div>
 											<div class="col-md-6"> 
 												<div class="form-group">
 													<label class="label" for="email">Email Address</label>
-													<input type="email" class="form-control" name="message-email" id="email" placeholder="Email">
+													<input type="email" class="form-control" name="message-email" id="email" placeholder="Email" required>
 												</div>
 											</div>
 											<div class="col-md-12">
 												<div class="form-group">
 													<label class="label" for="subject">Subject</label>
-													<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+													<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
 												</div>
 											</div>
 											<div class="col-md-12">
 												<div class="form-group">
 													<label class="label" for="subject">Telephone Number</label>
-													<input type="tel" class="form-control" name="tel" id="tel" placeholder="+xx-xxxxx-xxxxx">
+													<input type="tel" class="form-control" name="tel" id="tel" placeholder="+xx-xxxxx-xxxxx" onkeypress="return onlyNumberKey(event)" required>
 												</div>
 											</div>
 											<div class="col-md-12">
 												<div class="form-group">
 													<label class="label" for="#">Message</label>
-													<textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Message"></textarea>
+													<textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Message" required></textarea>
 												</div>
 											</div>
 											<div class="col-md-12">
 												<div class="form-group">
-													<input type="submit" value="Send Message" class="btn btn-primary">
+													<input type="submit" value="Send Message" class="btn btn-primary" onclick="return detailssubmit()">
 													<div class="submitting"></div>
 												</div>
 											</div>
@@ -182,7 +189,7 @@
 								</div>
 							</div>
 									<div class="col-md-5 order-md-first d-flex align-items-stretch google-maps">
-							            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12194.533479444051!2d85.5100338967745!3d23.653184535906632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f4f378a40de68f%3A0x1c9162b5d27a25f!2sPraneet%20Towers!5e0!3m2!1sen!2sin!4v1596787487120!5m2!1sen!2sin"
+							           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4579.041517792682!2d77.4224049150916!3d28.621153499740156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc72e22b90c3c8991!2sMahagun%20Mywoods!5e0!3m2!1sen!2sin!4v1601807303540!5m2!1sen!2sin">
 							              allowfullscreen></iframe>
 							        </div>
 								</div>
@@ -194,5 +201,21 @@
 		</div>
 	</section>
 	{% endif %}
+
+	<script> 
+    function onlyNumberKey(evt) { 
+          
+        // Only ASCII charactar in that range allowed 
+        var ASCIICode = (evt.which) ? evt.which : evt.keyCode 
+        if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57)) 
+            return false; 
+        return true; 
+    } 
+</script> 
+<script> 
+    function detailssubmit() { 
+        alert("Your details were Submitted"); 
+    } 
+</script> 
 
 	{% endblock %}

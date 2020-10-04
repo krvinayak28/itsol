@@ -18,272 +18,215 @@
     </div>
   </div>
 </section>
+<!--About US Start-->
 
-<section class="ftco-section">
- <div class="container">
-  <div class="row justify-content-center pb-5">
-    <div class="col-lg-6 heading-section text-center ftco-animate">
-      <h2 class="mb-4">More than <span>35+</span> years we provide <span>IT Solution</span></h2>
-      <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
-    </div>
-  </div>
-  <div class="row">
-   <div class="col-md-4">
-    <div class="services-2 text-center">
-     <div class="icon">
-      <span class="flaticon-web-programming"></span>
-    </div>
-    <div class="text">
-      <h3>Web Development</h3>
-      <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
-    </div>
-  </div>
-</div>
-<div class="col-md-4">
-  <img src="images/services.svg" class="img-fluid" alt="">
-</div>
-<div class="col-md-4">
-  <div class="services-2 text-center">
-   <div class="icon">
-    <span class="flaticon-secure"></span>
-  </div>
-  <div class="text">
-    <h3>Server Security</h3>
-    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
-  </div>
-</div>
-</div>
-</div>
-</div>
-</section>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
 
-<section class="ftco-counter ftco-section ftco-no-pt img" id="section-counter">
- <div class="container">
-  <div class="row no-gutters d-flex">
-   <div class="col-md-6 d-flex">
-    <div class="img d-flex align-self-stretch" style="background-image:url({% static 'website/images/about.jpg' %});"></div>
-  </div>
-  <div class="col-md-6 p-3 pl-md-5 py-5 bg-primary">
-    <div class="row justify-content-start pb-3">
-      <div class="col-md-12 heading-section heading-section-white ftco-animate">
-        <h2 class="mb-4">Consult us here in <span>ITSolution</span></h2>
-        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-6 justify-content-center counter-wrap ftco-animate">
-        <div class="block-18 mb-4">
-          <div class="text">
-            <strong class="number" data-number="750">0</strong>
-            <span>Project Complete</span>
-          </div>
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+{% comment %} <div class="about-section">
+  <h1>About Us Page</h1>
+  <p>Some text about who we are and what we do.</p>
+  <p>Resize the browser window to see that this page is responsive by the way.</p>
+</div> {% endcomment %}
+
+<h2 style="text-align:center">Meet the Team</h2>
+<p style="text-align:center">A Combination of Creative, Technical and Strategic Talents.</p>
+<div class="row">
+  <div class="column">
+    <div class="card border-info text-center text-white bg-info">
+      <img src="{% static 'website/images/testimony-21.jpg'%}" alt="Prashant" style="width:100%">
+      <div class="container">
+        <h2>Prashant Saurav</h2>
+        <p class="title text-white">CEO & Founder</p>
+        <div class="card-body">
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>jane@example.com</p>
+        {% comment %} <p><button class="button">Contact</button></p> {% endcomment %}
         </div>
       </div>
-      <div class="col-md-6 justify-content-center counter-wrap ftco-animate">
-        <div class="block-18 mb-4">
-          <div class="text">
-            <strong class="number" data-number="568">0</strong>
-            <span>Happy Clients</span>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 justify-content-center counter-wrap ftco-animate">
-        <div class="block-18 mb-4">
-          <div class="text">
-            <strong class="number" data-number="478">0</strong>
-            <span>Business Partners</span>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 justify-content-center counter-wrap ftco-animate">
-        <div class="block-18 mb-4">
-          <div class="text">
-            <strong class="number" data-number="780">0</strong>
-            <span>IT Consultant</span>
-          </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card border-info text-center text-white bg-info">
+      <img src="{% static 'website/images/testimony-2.jpg'%}" alt="Kundan" style="width:100%">
+      <div class="container">
+        <h2>Kundan Kumar</h2>
+        <p class="title text-white">Director</p>
+        <div class="card-body">
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>mike@example.com</p>
+        {% comment %} <p><button class="button">Contact</button></p> {% endcomment %}
         </div>
       </div>
     </div>
   </div>
-</div>
-</div>
-</section>
 
-
-<section class="ftco-section ftco-no-pb testimony-section" style="background-image: url({% static 'website/images/bg_1.jpg' %});">
- <div class="overlay-1"></div>
- <div class="container-fluid">
-  <div class="row justify-content-center mb-5 pb-3">
-    <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
-      <h2 class="mb-4">Our insights &amp; creative ideas</h2>
+  <div class="column">
+    <div class="card border-info text-center text-white bg-info">
+      <img src="{% static 'website/images/testimony-28.jpg'%}" alt="Vinayak" style="width:100%">
+      <div class="container">
+        <h2>Vinayak Kumar</h2>
+        <p class="title text-white">Back End Developer</p>
+        <div class="card-body">
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>mike@example.com</p>
+        {% comment %} <p><button class="button">Contact</button></p> {% endcomment %}
+        </div>
+      </div>
     </div>
   </div>
-  <div class="row ftco-animate">
-    <div class="col-md-12 testimonial">
-      <div class="carousel-testimony owl-carousel ftco-owl">
-        <div class="item">
-          <div class="testimony-wrap d-flex align-items-stretch" style="background-image: url({% static 'website/images/testimony-1.jpg' %});">
-           <div class="overlay"></div>
-           <div class="text">
-             <div class="line"></div>
-             <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-             <p class="name">Donna Scott</p>
-             <span class="position">Marketing Manager</span>
-           </div>
-         </div>
-       </div>
-       <div class="item">
-        <div class="testimony-wrap d-flex align-items-stretch" style="background-image: url({% static 'website/images/testimony-2.jpg' %});">
-         <div class="overlay"></div>
-         <div class="text">
-           <div class="line"></div>
-           <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-           <p class="name">Roger Scott</p>
-           <span class="position">Interface Designer</span>
-         </div>
-       </div>
-     </div>
-     <div class="item">
-      <div class="testimony-wrap d-flex align-items-stretch" style="background-image: url({% static 'website/images/testimony-3.jpg' %});">
-       <div class="overlay"></div>
-       <div class="text">
-         <div class="line"></div>
-         <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-         <p class="name">Roger Scott</p>
-         <span class="position">UI Designer</span>
-       </div>
-     </div>
-   </div>
-   <div class="item">
-    <div class="testimony-wrap d-flex align-items-stretch" style="background-image: url({% static 'website/images/testimony-4.jpg' %});">
-     <div class="overlay"></div>
-     <div class="text">
-       <div class="line"></div>
-       <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-       <p class="name">Roger Scott</p>
-       <span class="position">Web Developer</span>
-     </div>
-   </div>
- </div>
- <div class="item">
-  <div class="testimony-wrap d-flex align-items-stretch" style="background-image: url({% static 'website/images/testimony-5.jpg' %});">
-   <div class="overlay"></div>
-   <div class="text">
-     <div class="line"></div>
-     <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-     <p class="name">Roger Scott</p>
-     <span class="position">System Analyst</span>
-   </div>
- </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
 
-<section class="ftco-section bg-light ftco-faqs">
- <div class="container">
-  <div class="row">
-   <div class="col-lg-6 order-md-last">
-    <div class="img img-video d-flex align-self-stretch align-items-center justify-content-center justify-content-md-center mb-4 mb-sm-0" style="background-image:url({% static 'website/images/about.jpg' %});">
+  <div class="column">
+    <div class="card border-info text-center text-white bg-info">
+      <img src="{% static 'website/images/testimony-2old.jpg'%}" alt="Sneh" style="width:100%">
+      <div class="container">
+        <h2>Sneh priye</h2>
+        <p class="title text-white">Full Stack Developer</p>
+        <div class="card-body">
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>mike@example.com</p>
+        {% comment %} <p><button class="button">Contact</button></p> {% endcomment %}
+        </div>
+      </div>
     </div>
-    <div class="d-flex mt-3">
-     <div class="img img-2 mr-md-2 w-100" style="background-image:url({% static 'website/images/about-1.jpg' %});"></div>
-     <div class="img img-2 ml-md-2 w-100" style="background-image:url({% static 'website/images/about-2.jpg)' %};"></div>
-   </div>
- </div>
-
- <div class="col-lg-6">
-  <div class="heading-section mb-5 mt-5 mt-lg-0">
-   <h2 class="mb-3">Frequently Asks Questions</h2>
- </div>
- <div id="accordion" class="myaccordion w-100" aria-multiselectable="true">
-  <div class="card">
-    <div class="card-header p-0" id="headingOne">
-      <h2 class="mb-0">
-        <button href="#collapseOne" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link" data-parent="#accordion" data-toggle="collapse" aria-expanded="true" aria-controls="collapseOne">
-         <p class="mb-0">How can we help your business?</p>
-         <i class="fa" aria-hidden="true"></i>
-       </button>
-     </h2>
-   </div>
-   <div class="collapse show" id="collapseOne" role="tabpanel" aria-labelledby="headingOne">
-    <div class="card-body py-3 px-0">
-     <ol>
-      <li>Far far away, behind the word mountains</li>
-      <li>Consonantia, there live the blind texts</li>
-      <li>When she reached the first hills of the Italic Mountains</li>
-      <li>Bookmarksgrove, the headline of Alphabet Village</li>
-      <li>Separated they live in Bookmarksgrove right</li>
-    </ol>
   </div>
-</div>
-</div>
 
-<div class="card">
-  <div class="card-header p-0" id="headingTwo" role="tab">
-    <h2 class="mb-0">
-      <button href="#collapseTwo" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link" data-parent="#accordion" data-toggle="collapse" aria-expanded="false" aria-controls="collapseTwo">
-       <p class="mb-0">How long does it take to build a website?</p>
-       <i class="fa" aria-hidden="true"></i>
-     </button>
-   </h2>
- </div>
- <div class="collapse" id="collapseTwo" role="tabpanel" aria-labelledby="headingTwo">
-  <div class="card-body py-3 px-0">
-   <ol>
-    <li>Far far away, behind the word mountains</li>
-    <li>Consonantia, there live the blind texts</li>
-    <li>When she reached the first hills of the Italic Mountains</li>
-    <li>Bookmarksgrove, the headline of Alphabet Village</li>
-    <li>Separated they live in Bookmarksgrove right</li>
-  </ol>
-</div>
-</div>
-</div>
+  <div class="column">
+    <div class="card border-info text-center text-white bg-info">
+      <img src="{% static 'website/images/testimony-10.jpg'%}" alt="Anukriti" style="width:100%">
+      <div class="container">
+        <h2>Anukriti</h2>
+        <p class="title text-white">Content Manager</p>
+        <div class="card-body">
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>mike@example.com</p>
+        {% comment %} <p><button class="button">Contact</button></p> {% endcomment %}
+        </div>
+      </div>
+    </div>
+  </div>
 
-<div class="card">
-  <div class="card-header p-0" id="headingThree" role="tab">
-    <h2 class="mb-0">
-      <button href="#collapseThree" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link" data-parent="#accordion" data-toggle="collapse" aria-expanded="false" aria-controls="collapseThree">
-       <p class="mb-0">Can I help your IT Solution for business?</p>
-       <i class="fa" aria-hidden="true"></i>
-     </button>
-   </h2>
- </div>
- <div class="collapse" id="collapseThree" role="tabpanel" aria-labelledby="headingTwo">
-  <div class="card-body py-3 px-0">
-   <ol>
-    <li>Far far away, behind the word mountains</li>
-    <li>Consonantia, there live the blind texts</li>
-    <li>When she reached the first hills of the Italic Mountains</li>
-    <li>Bookmarksgrove, the headline of Alphabet Village</li>
-    <li>Separated they live in Bookmarksgrove right</li>
-  </ol>
-</div>
-</div>
-</div>
+  <div class="column">
+    <div class="card border-info text-center text-white bg-info">
+      <img src="{% static 'website/images/testimony-5old.jpg'%}" alt="Rahul" style="width:100%">
+      <div class="container">
+        <h2>Rahul Kumar</h2>
+        <p class="title text-white">Digital Marketing Expert</p>
+        <div class="card-body">
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>mike@example.com</p>
+        {% comment %} <p><button class="button"></button></p> {% endcomment %}
+        </div>
+      </div>
+    </div>
+  </div>
 
-<div class="card">
-  <div class="card-header p-0" id="headingFour" role="tab">
-    <h2 class="mb-0">
-      <button href="#collapseFour" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link" data-parent="#accordion" data-toggle="collapse" aria-expanded="false" aria-controls="collapseFour">
-       <p class="mb-0">What are those requirements for ITSolutions?</p>
-       <i class="fa" aria-hidden="true"></i>
-     </button>
-   </h2>
- </div>
- <div class="collapse" id="collapseFour" role="tabpanel" aria-labelledby="headingTwo">
-  <div class="card-body py-3 px-0">
-   <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
- </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
+  {% comment %} <div class="item">
+							<div class="testimony-wrap d-flex align-items-stretch" style="background-image: url({% static 'website/images/testimony-2.jpg' %});">
+								<div class="overlay"></div>
+								<div class="text">
+									<div class="line"></div>
+									<p class="mb-4">Please provide me the Tag line for Director!</p>
+									<p class="name">Kundan Kumar</p>
+									<span class="position">Director</span>
+								</div>
+							</div>
+		</div> {% endcomment %}
+
+  <div class="column">
+    <div class="card border-info text-center text-white bg-info">
+      <img src="{% static 'website/images/testimony-3old.jpg'%}" alt="Faraz" style="width:100%">
+      <div class="container">
+        <h2>Faraz Kahn</h2>
+        <div class="card-body">
+        <p class="title text-white">Graphics designer</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>mike@example.com</p>
+        {% comment %} <p><button class="button">Contact</button></p> {% endcomment %}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+</body>
+</html>
+
 
 {% endblock %}
