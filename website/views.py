@@ -78,6 +78,10 @@ def services(request):
 	return render(request, 'services.html', {})
 
 
+def cards(request):
+	return render(request, 'cards.html', {})
+
+
 
 
 # def appointment(request):

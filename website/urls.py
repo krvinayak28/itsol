@@ -26,4 +26,5 @@ urlpatterns = [
     path('cases.html', views.cases, name='cases'),
     path('contact.html', views.contact, name='contact'),
     path('services.html', views.services, name='services'),
+    path('cards.html', views.cards, name='cards'),
 ]

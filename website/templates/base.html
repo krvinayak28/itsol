@@ -164,7 +164,7 @@ function topFunction() {
 					<div class="ftco-footer-widget mb-4 ml-md-5">
 						<h2 class="ftco-heading-2">Explore</h2>
 						<ul class="list-unstyled">
-							<li><a href="#" class="py-2 d-block">About</a></li>
+							<li><a href="{% url 'about' %}" class="py-2 d-block">About</a></li>
 							<li><a href="{% url 'contact' %}" class="py-2 d-block">Contact</a></li>
 							<li><a href="{% url 'services' %}" class="py-2 d-block">What We Do</a></li>
 							{% comment %} <li><a href="#" class="py-2 d-block">Plans &amp; Pricing</a></li>
@@ -205,7 +205,12 @@ function topFunction() {
 		
 
 		<!-- loader -->
-		<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+		<div id="ftco-loader" class="show fullscreen">
+			<svg class="circular" width="48px" height="48px">
+			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#EEEEEE"/>
+			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#00e8f9"/>
+			</svg>
+		</div>
 
 		<script src="/javascripts/application.js" type="text/javascript" charset="utf-8" async defer>
 
@@ -216,10 +221,6 @@ function topFunction() {
 		</script>
 
 		<!--dropdown script-->
-		<script>
-$('#menu-main > li > .dropdown-toggle').click(function () {
-    window.location = $(this).attr('href');
-});
 </script>
 </script>
 

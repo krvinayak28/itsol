@@ -35,10 +35,12 @@
 	</div>
 	
 	
-
-	<section class="ftco-section" >
+<div id="readmore">
+	
+</div>
+	<section class="ftco-section" id="readmore" >
 		<div class="container">
-			<div class="row justify-content-center pb-5" >
+			<div class="row justify-content-center pb-5"  >
 				<div class="col-lg-6 heading-section text-center ftco-animate">
 					<h2 class="mb-4" >We Create <span>What</span> you need! <span>Lets implement!</span></h2>
 					<p>We are Encoder N Apps!</p>
@@ -183,7 +185,7 @@
 						<div class="icon"><span> <img src="{% static 'website/images/mobile.svg' %}" class="filter-green" alt=""> </span></div>
 						<div class="media-body">
 							<h3 class="heading mb-3">Mobile Development</h3>
-							<p>Our Professional team at Encoder N Apps offers robust and scalable mobile app development services for iPhone, iPad and Android platform.</p>
+							<p>Our Professional team robust and scalable mobile app development services for iPhone, iPad and Android platform.</p>
 						</div>
 					</div>      
 				</div>
@@ -203,7 +205,7 @@
 						<div class="icon"><span><img src="{% static 'website/images/touchxp.svg' %}" class="filter-green" alt=""></span></div>
 						<div class="media-body">
 							<h3 class="heading mb-3">UI/UX</h3>
-							<p>Give Your Business Wings to Fly with Our Online Marketing Solutions</p>
+							<p>You Need User Interface! No Problem! We are Here.</p>
 						</div>
 					</div>      
 				</div>
@@ -600,7 +602,7 @@
 			</style>
       <h2>Thanks {{ message_name }} !</h2>
       <h4> We got your email and will respond shortly.</h4>
-      <h5 class="btn-grad"><a href="{% url 'index' %}" style="color:red;">Explore More!</a></h5>
+      <h5 class="btn-grad"><a href="{% url 'index' %}" style="color:White;">Explore More!</a></h5>
       <br><br><br>
     </center>
     
@@ -645,13 +647,18 @@
 								</div>
 							</div>
 							<div class="col-md-12">
+												<div class="form-group">
+													
+													<input type="tel" class="form-control" name="tel" id="tel" placeholder="Phone: +xx-xxxxx-xxxxx" onkeypress="return onlyNumberKey(event)" required>
+												</div>
+							<div class="col-md-12">
 								<div class="form-group">
 									<textarea  id="" cols="30" rows="7" class="form-control" placeholder="Message" name="message" required></textarea>
 								</div>
 							</div>
 							<div class="col-md-12">
 								<div class="form-group">
-									<input type="submit" value="Send message" class="btn btn-primary py-3 px-4">
+									<input type="submit" value="Send message" class="btn btn-primary py-3 px-4" onclick="return detailssubmit()">
 								</div>
 							</div>
 						</div>
@@ -669,4 +676,20 @@
     }
 	
 </style>
-	{% endblock %}}
+<script> 
+    function onlyNumberKey(evt) { 
+          
+        // Only ASCII charactar in that range allowed 
+        var ASCIICode = (evt.which) ? evt.which : evt.keyCode 
+        if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57)) 
+            return false; 
+        return true; 
+    } 
+</script> 
+<script> 
+    function detailssubmit() { 
+        alert("Your details were Submitted"); 
+    } 
+</script> 
+	
+{% endblock %}}
