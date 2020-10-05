@@ -6,7 +6,7 @@
 
 {% block content %}
 
-
+<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
 <section class="hero-wrap hero-wrap-2" style="background-image: url({% static 'website/images/bg_1.jpg' %});" data-stellar-background-ratio="0.5">
   <div class="overlay"></div>
   <div class="container">
@@ -86,12 +86,29 @@ html {
 .button:hover {
   background-color: #555;
 }
+.card:nth-child(1) {
+
+		box-shadow: 0 0 0 #219ecf;
+		/* background: #219ecf; */
+	}
+
+	.card:nth-child(1):hover {
+
+		box-shadow: 0 0 0 10px #e97b7b;
+		
+  }
+  img{ 
+    border-radius: 10%;
+  }
 
 @media screen and (max-width: 650px) {
   .column {
     width: 100%;
     display: block;
   }
+}
+.w3-hover-shadow:hover{
+  box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 10px 20px 0 rgba(214, 9, 9, 0.507)
 }
 </style>
 </head>
@@ -112,16 +129,16 @@ html {
 			</div>
 <div class="row">
   <div class="column">
-    <div class="card border-info text-center text-white bg-info">
+    <div class="card border-info text-center text-white bg-info ">
       <img src="{% static 'website/images/testimony-21.jpg'%}" alt="Prashant" style="width:100%">
-      <div class="container">
+      <div class="container w3-hover-shadow">
         <h2>Prashant Saurav</h2>
         <p class="title text-white">CEO & Founder</p>
-        <div class="card-body">
+        <!-- <div class="card-body">
         <p>Some text that describes me lorem ipsum ipsum lorem.</p>
         <p>jane@example.com</p>
         {% comment %} <p><button class="button">Contact</button></p> {% endcomment %}
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
@@ -129,14 +146,14 @@ html {
   <div class="column">
     <div class="card border-info text-center text-white bg-info">
       <img src="{% static 'website/images/testimony-2.jpg'%}" alt="Kundan" style="width:100%">
-      <div class="container">
+      <div class="container w3-hover-shadow">
         <h2>Kundan Kumar</h2>
         <p class="title text-white">Director</p>
-        <div class="card-body">
+       <!-- <div class="card-body">
         <p>Some text that describes me lorem ipsum ipsum lorem.</p>
         <p>mike@example.com</p>
         {% comment %} <p><button class="button">Contact</button></p> {% endcomment %}
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
@@ -144,14 +161,14 @@ html {
   <div class="column">
     <div class="card border-info text-center text-white bg-info">
       <img src="{% static 'website/images/testimony-28.jpg'%}" alt="Vinayak" style="width:100%">
-      <div class="container">
+      <div class="container  w3-hover-shadow">
         <h2>Vinayak Kumar</h2>
         <p class="title text-white">Back End Developer</p>
-        <div class="card-body">
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <!-- <div class="card-body"> -->
+        <!-- <p>Some text that describes me lorem ipsum ipsum lorem.</p>
         <p>mike@example.com</p>
         {% comment %} <p><button class="button">Contact</button></p> {% endcomment %}
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
@@ -159,14 +176,14 @@ html {
   <div class="column">
     <div class="card border-info text-center text-white bg-info">
       <img src="{% static 'website/images/testimony-21.jpg'%}" alt="Sneh" style="width:100%">
-      <div class="container">
+      <div class="container  w3-hover-shadow">
         <h2>Sneh priye</h2>
         <p class="title text-white">Full Stack Developer</p>
-        <div class="card-body">
+        <!-- <div class="card-body">
         <p>Some text that describes me lorem ipsum ipsum lorem.</p>
         <p>mike@example.com</p>
         {% comment %} <p><button class="button">Contact</button></p> {% endcomment %}
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
@@ -174,14 +191,14 @@ html {
   <div class="column">
     <div class="card border-info text-center text-white bg-info">
       <img src="{% static 'website/images/testimony-10.jpg'%}" alt="Anukriti" style="width:100%">
-      <div class="container">
+      <div class="container  w3-hover-shadow">
         <h2>Anukriti</h2>
         <p class="title text-white">Content Manager</p>
-        <div class="card-body">
+        <!-- <div class="card-body">
         <p>Some text that describes me lorem ipsum ipsum lorem.</p>
         <p>mike@example.com</p>
         {% comment %} <p><button class="button">Contact</button></p> {% endcomment %}
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
@@ -189,49 +206,49 @@ html {
   <div class="column">
     <div class="card border-info text-center text-white bg-info">
       <img src="{% static 'website/images/testimony-2.jpg'%}" alt="Rahul" style="width:100%">
-      <div class="container">
+      <div class="container  w3-hover-shadow">
         <h2>Rahul Kumar</h2>
         <p class="title text-white">Digital Marketing Expert</p>
-        <div class="card-body">
+        <!-- <div class="card-body">
         <p>Some text that describes me lorem ipsum ipsum lorem.</p>
         <p>mike@example.com</p>
         {% comment %} <p><button class="button"></button></p> {% endcomment %}
-        </div>
+        </div> -->
       </div>
+    </div>
+  </div>
+
+  {% comment %} <div class="column">
+    <div class="card border-info text-center text-white bg-info">
+      <img src="{% static 'website/images/testimony-2.jpg'%}" alt="Rahul" style="width:100%">
+      <div class="container  w3-hover-shadow">
+        <h2>Rahul Kumar</h2>
+        <p class="title text-white">Digital Marketing Expert</p> {% endcomment %}
+        <!-- <div class="card-body">
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>mike@example.com</p>
+        {% comment %} <p><button class="button"></button></p> {% endcomment %}
+        </div> -->
+      {% comment %} </div>
     </div>
   </div>
 
   <div class="column">
     <div class="card border-info text-center text-white bg-info">
       <img src="{% static 'website/images/testimony-2.jpg'%}" alt="Rahul" style="width:100%">
-      <div class="container">
+      <div class="container  w3-hover-shadow">
         <h2>Rahul Kumar</h2>
-        <p class="title text-white">Digital Marketing Expert</p>
-        <div class="card-body">
+        <p class="title text-white">Digital Marketing Expert</p> {% endcomment %}
+        <!-- <div class="card-body">
         <p>Some text that describes me lorem ipsum ipsum lorem.</p>
         <p>mike@example.com</p>
         {% comment %} <p><button class="button"></button></p> {% endcomment %}
-        </div>
-      </div>
+        </div> -->
+      {% comment %} </div>
     </div>
-  </div>
+  </div> {% endcomment %}
 
-  <div class="column">
-    <div class="card border-info text-center text-white bg-info">
-      <img src="{% static 'website/images/testimony-2.jpg'%}" alt="Rahul" style="width:100%">
-      <div class="container">
-        <h2>Rahul Kumar</h2>
-        <p class="title text-white">Digital Marketing Expert</p>
-        <div class="card-body">
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>mike@example.com</p>
-        {% comment %} <p><button class="button"></button></p> {% endcomment %}
-        </div>
-      </div>
-    </div>
-  </div>
-
-  {% comment %} <div class="item">
+  <!-- {% comment %} <div class="item">
 							<div class="testimony-wrap d-flex align-items-stretch" style="background-image: url({% static 'website/images/testimony-2.jpg' %});">
 								<div class="overlay"></div>
 								<div class="text">
@@ -241,19 +258,20 @@ html {
 									<span class="position">Director</span>
 								</div>
 							</div>
-		</div> {% endcomment %}
+		</div> {% endcomment %} -->
 
   <div class="column">
     <div class="card border-info text-center text-white bg-info">
       <img src="{% static 'website/images/testimony-2.jpg'%}" alt="Faraz" style="width:100%">
-      <div class="container">
+      <div class="container  w3-hover-shadow">
         <h2>Faraz Kahn</h2>
-        <div class="card-body">
-        <p class="title text-white">Graphics designer</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+         <p class="title text-white">Graphics designer</p>
+         <!-- <div class="card-body"> -->
+       
+        <!--<p>Some text that describes me lorem ipsum ipsum lorem.</p>
         <p>mike@example.com</p>
         {% comment %} <p><button class="button">Contact</button></p> {% endcomment %}
-        </div>
+        </div> -->
       </div>
     </div>
   </div>

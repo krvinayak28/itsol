@@ -60,9 +60,11 @@
 
 			
 					<li class="dropdown nav-item " data-hover="dropdown" role="menu" aria-haspopup="true" aria-expanded="false">
-						<a href="{% url 'services' %}" class="nav-link" style="color:blue">Services</a>
+						<a href="javascript:void(0);" class="nav-link" style="color:blue">Services</a>
 						    
 							    <div class="dropdown-menu" role="menu">
+
+							      <a class="dropdown-item" href="{% url 'services' %}">Serices</a>
 							      <a class="dropdown-item" href="{% url 'WebDevelopment' %}">Web</a>
 							      <a class="dropdown-item" href="{% url 'AI' %}">AI</a>
 							      <a class="dropdown-item" href="{% url 'NetworkSecurity' %}">Network</a>

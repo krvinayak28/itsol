@@ -165,7 +165,7 @@
 						<div class="icon"><span class="flaticon-secure"></span></div>
 						<div class="media-body">
 							<h3 class="heading mb-3">Network Security</h3>
-							<p>We help to secure Every thing!</p>
+							<p>We help to secure Every thing! <br>After all, it is your information.</p>
 						</div>
 					</div>      
 				</div>
@@ -184,7 +184,7 @@
 						<div class="line"></div>
 						<div class="icon"><span> <img src="{% static 'website/images/mobile.svg' %}" class="filter-green" alt=""> </span></div>
 						<div class="media-body">
-							<h3 class="heading mb-3">Mobile Development</h3>
+							<h3 class="heading mb-3 style="font-size:14px"">Mobile Development</h3>
 							<p>Our Professional team robust and scalable mobile app development services for iPhone, iPad and Android platform.</p>
 						</div>
 					</div>      
@@ -195,7 +195,7 @@
 						<div class="icon"><span><img src="{% static 'website/images/software.svg' %}" class="filter-green" alt=""></span></div>
 						<div class="media-body">
 							<h3 class="heading mb-3">Software Development</h3>
-							<p>We develop what you need!</p>
+							<p>Designing with the Cool thinking! We develop what you need!</p>
 						</div>
 					</div>      
 				</div>
@@ -205,7 +205,7 @@
 						<div class="icon"><span><img src="{% static 'website/images/touchxp.svg' %}" class="filter-green" alt=""></span></div>
 						<div class="media-body">
 							<h3 class="heading mb-3">UI/UX</h3>
-							<p>You Need User Interface! No Problem! We are Here.</p>
+							<p>A well designed user interface provides end-to end solutions to fulfil all the requirements of a user.</p>
 						</div>
 					</div>      
 				</div>
@@ -479,8 +479,7 @@
 								<div class="overlay"></div>
 								<div class="text">
 									<div class="line"></div>
-									<p class="mb-4">This website if fully created by me. 
-									I have put lot of effort while managing its content.</p>
+									<p class="mb-4">Work hard. Play harder. CODE hardest.</p>
 									<p class="name">Vinayak Kumar</p>
 									<span class="position">Back End Developer</span>
 								</div>
@@ -491,7 +490,7 @@
 								<div class="overlay"></div>
 								<div class="text">
 									<div class="line"></div>
-									<p class="mb-4">Anukriti is a student of MA in Advertising, Public relations and Corporate communication at Sharda University. In the final year of her Post-graduation, she thought of outsourcing the work and started freelance content writing.</p>
+									<p class="mb-4" style="font-size:14px">Anukriti is a student of MA in Advertising, Public relations and Corporate communication at Sharda University.She thought of outsourcing the work and started freelance content writing.</p>
 									<p class="name">Anukriti</p>
 									<span class="position">Content Manager</span>
 								</div>
@@ -629,24 +628,26 @@
 									<input type="email" class="form-control" name="message-email" placeholder="Email" required>
 								</div>
 							</div>
-							<div class="col-md-12">
+							{% comment %} <div class="col-md-12">
 								<div class="form-group">
 									<div class="form-field">
 										<div class="select-wrap">
 											<div class="icon"><span class="fa fa-chevron-down"></span></div>
-											<select name="" id="" class="form-control" name="message-services">
-												<option value="">Services</option>
-												<option value="">Web Development</option>
-												<option value="">Database Analysis</option>
-												<option value="">Server Security</option>
-												<option value="">UX/UI Strategy</option>
-												<option value="">Branding</option>
-												<option value="">Applications</option>
+											<select name="option" id="option" class="form-control" name="option">
+											<option value="">Enter the option</option>
+												
+												<option value="1">Services</option>
+												<option value="2">Web Development</option>
+												<option value="3">Database Analysis</option>
+												<option value="4">Server Security</option>
+												<option value="5">UX/UI Strategy</option>
+												<option value="6">Branding</option>
+												<option value="7">Applications</option>
 											</select>
 										</div>
 									</div>
 								</div>
-							</div>
+							</div> {% endcomment %}
 							<div class="col-md-12">
 												<div class="form-group">
 													
