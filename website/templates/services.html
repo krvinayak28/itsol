@@ -14,12 +14,28 @@
 
 {% block content %}
 
+<style>
+.figure{ margin: 0px;
+        border-radius: 50%;
+        }
+.logo{
+  width:130px;
+  margin:0 auto 35px;
+  margin-bottom: 35px;
+  border-radius: 50%;
+  overflow: hidden;
+}
 
-<section class="hero-wrap hero-wrap-2" style="background-image: url('{% static 'website/images/encoder.jpg' %}');" data-stellar-background-ratio="0.5">
+</style>
+<section class="hero-wrap hero-wrap-2" style="background-image: url('{% static 'website/images/bg_3.jpg' %}');" data-stellar-background-ratio="0.5">
     <div class="overlay"></div>
     <div class="container">
+      
       <div class="row no-gutters slider-text align-items-end justify-content-center">
         <div class="col-md-9 ftco-animate pb-5 text-center">
+          <figure class="logo animated fadeInDown delay-07s">
+          <a href="#"><img src="{% static 'website/images/encoder.jpg' %}" class="img-fluid" alt=""></a> 
+        </figure>
           <h1 class="mb-3 bread">Services</h1>
           <p class="breadcrumbs"><span class="mr-2"><a href="{% url 'index' %}">Home <i class="fa fa-chevron-right"></i></a></span> 
           <span>Services <i class="fa fa-chevron-right"></i></span></p>
