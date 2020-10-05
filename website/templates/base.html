@@ -129,27 +129,18 @@
 #myBtn:hover {
   background-color: #555;
 
-.figure{ margin: 0px;
+}
+<!-- footer logo-->
+.figure{
         border-radius: 30%;
+		float: top;
+		padding: 5px;
         }
 .logo{
+	float: top;
   width:130px;
-  margin:0 auto 35px;
-  margin-bottom: 35px;
- 
-  overflow: hidden;
-}
-
-}
-
-.figure{ margin: 0px;
-        border-radius: 30%;
-        }
-.logo{
-  width:130px;
-  margin:0 auto 35px;
-  margin-left: 10px;
- 
+  
+	
   overflow: hidden;
 }
 
@@ -189,8 +180,8 @@ function topFunction() {
 				<div class="col-md">
 					<div class="ftco-footer-widget mb-4">
 						<h2 class="ftco-footer-logo">
-						 <figure class="logo animated fadeInDown delay-07s">
-							<a href="{% url 'index' %}"><img src="{% static 'website/images/ena1.png' %}" class="img-fluid" alt=""></a> 
+						 <figure class=" animated fadeInDown delay-07s">
+							<a href="{% url 'index' %}"><img src="{% static 'website/images/ena1.png' %}" class="img-fluid" width=100" alt=""></a> 
 							</figure></h2>
 						<p>Transforming Your Ideas, <strong>Digitally</strong>
 							<br>
