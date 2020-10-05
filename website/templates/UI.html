@@ -21,13 +21,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color:  #4ca1af; /*1 change*/
+    background-color:  #f1f1f1; /*1 change*/
 }
 
 .about-section1{
-    background: url('{% static 'website/images/pic.jpg' %}') no-repeat left;
+    background: url('{% static 'website/images/UI.jpg' %}') no-repeat left;
     background-size: 55%;
-    background-color: cyan;/*2nd change*/
+    background-color: F9EBEA;/*2nd change*/
     overflow: hidden;
     padding: 100px 0;
 }
@@ -35,7 +35,7 @@
 .inner-container1{
     width: 55%;
     float: right;
-    background: linear-gradient(to right, #904e95, #e96443); /* 3rd change */
+    background: linear-gradient(to right, #4ca1af, #c4e0e5);; /* 3rd change */
     padding: 150px;
 }
 
@@ -44,12 +44,12 @@
     margin-bottom: 30px;
     font-size: 30px;
     font-weight: 900;
-    text-shadow: 2px 2px #ff0000;
+    text-shadow: 2px 2px black;
 }
 
 .text1{
     font-size: 13px;
-    color: black;
+    color: #17202A;
     
     line-height: 30px;
     text-align: justify;
@@ -64,7 +64,7 @@
     justify-content: space-between;
     font-weight: 700;
     font-size: 18px;
-    color: Cyan;
+    color: #1C2833;
     /* edited */
 }
 
@@ -95,11 +95,31 @@
 
     </style>
 
+
+<style>
+.figure{ margin: 0px;
+        border-radius: 30%;
+        }
+.logo{
+  width:130px;
+  margin:0 auto 35px;
+  margin-bottom: 35px;
+ 
+  overflow: hidden;
+}
+
+</style>
+
+
+
     <section class="hero-wrap hero-wrap-2" style="background-image: url('{% static 'website/images/bg_3.jpg' %}');" data-stellar-background-ratio="0.5">
     <div class="overlay"></div>
     <div class="container">
       <div class="row no-gutters slider-text align-items-end justify-content-center">
         <div class="col-md-9 ftco-animate pb-5 text-center">
+        <figure class="logo animated fadeInDown delay-07s">
+          <a href="#"><img src="{% static 'website/images/ena1.png' %}" class="img-fluid" alt=""></a> 
+        </figure>
           <h1 class="mb-3 bread">Services</h1>
           <p class="breadcrumbs">
             <span class="mr-2"><a href="{% url 'index' %}">Home <i class="fa fa-chevron-right"></i></a></span> <span class="mr-2"><a href="{% url 'services' %}"> Services <i class="fa fa-chevron-right"></i></a><span> UI <i class="fa fa-chevron-right"></i></span></p>
