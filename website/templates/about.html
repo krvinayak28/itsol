@@ -12,6 +12,9 @@
   <div class="container">
     <div class="row no-gutters slider-text align-items-end justify-content-center">
       <div class="col-md-9 ftco-animate pb-5 text-center">
+      <figure class="logo animated fadeInDown delay-07s">
+          <a href="#"><img src="{% static 'website/images/ena1.png' %}" class="img-fluid" alt=""></a> 
+        </figure>
         <h1 class="mb-3 bread">About Us</h1>
         <p class="breadcrumbs"><span class="mr-2"><a href="{% url 'index' %}">Home <i class="fa fa-chevron-right"></i></a></span> <span>About us <i class="fa fa-chevron-right"></i></span></p>
       </div>
@@ -89,7 +92,7 @@
 		box-shadow: 0 0 0 10px #e97b7b;
 		
   }
-  img{ 
+  #img{ 
     border-radius: 10%;
   }
 
@@ -102,6 +105,18 @@
 .w3-hover-shadow:hover{
   box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 10px 20px 0 rgba(214, 9, 9, 0.507)
 }
+
+.figure{ margin: 0px;
+        border-radius: 30%;
+        }
+.logo{
+  width:130px;
+  margin:0 auto 35px;
+  margin-bottom: 35px;
+ 
+  overflow: hidden;
+}
+
 </style>
 </head>
 <body>
@@ -122,7 +137,7 @@
 <div class="row">
   <div class="column">
     <div class="card border-info text-center text-white bg-info ">
-      <img src="{% static 'website/images/testimony-21.jpg'%}" alt="Prashant" style="width:100%">
+      <img src="{% static 'website/images/testimony-21.jpg'%}"  id="img" alt="Prashant" style="width:100%">
       <div class="container w3-hover-shadow">
         <h2>Prashant Saurav</h2>
         <p class="title text-white">CEO & Founder</p>
@@ -137,7 +152,7 @@
 
   <div class="column">
     <div class="card border-info text-center text-white bg-info">
-      <img src="{% static 'website/images/testimony-2.jpg'%}" alt="Kundan" style="width:100%">
+      <img src="{% static 'website/images/testimony-2.jpg'%}" id="img" alt="Kundan" style="width:100%">
       <div class="container w3-hover-shadow">
         <h2>Kundan Kumar</h2>
         <p class="title text-white">Director</p>
@@ -152,7 +167,7 @@
 
   <div class="column">
     <div class="card border-info text-center text-white bg-info">
-      <img src="{% static 'website/images/testimony-28.jpg'%}" alt="Vinayak" style="width:100%">
+      <img src="{% static 'website/images/testimony-28.jpg'%}" id="img" alt="Vinayak" style="width:100%">
       <div class="container  w3-hover-shadow">
         <h2>Vinayak Kumar</h2>
         <p class="title text-white">Back End Developer</p>
@@ -167,7 +182,7 @@
 
   <div class="column">
     <div class="card border-info text-center text-white bg-info">
-      <img src="{% static 'website/images/testimony-21.jpg'%}" alt="Sneh" style="width:100%">
+      <img src="{% static 'website/images/testimony-21.jpg'%}" id="img"  alt="Sneh" style="width:100%">
       <div class="container  w3-hover-shadow">
         <h2>Sneh priye</h2>
         <p class="title text-white">Full Stack Developer</p>
@@ -182,7 +197,7 @@
 
   <div class="column">
     <div class="card border-info text-center text-white bg-info">
-      <img src="{% static 'website/images/testimony-10.jpg'%}" alt="Anukriti" style="width:100%">
+      <img src="{% static 'website/images/testimony-10.jpg'%}"  id="img" alt="Anukriti" style="width:100%">
       <div class="container  w3-hover-shadow">
         <h2>Anukriti</h2>
         <p class="title text-white">Content Manager</p>
@@ -197,7 +212,7 @@
 
   <div class="column">
     <div class="card border-info text-center text-white bg-info">
-      <img src="{% static 'website/images/rahul.jpg'%}" alt="Rahul" style="width:100%">
+      <img src="{% static 'website/images/rahul.jpg'%}" id="img"  alt="Rahul" style="width:100%">
       <div class="container  w3-hover-shadow">
         <h2>Rahul Kumar</h2>
         <p class="title text-white">Digital Marketing Expert</p>
@@ -254,7 +269,7 @@
 
   <div class="column">
     <div class="card border-info text-center text-white bg-info">
-      <img src="{% static 'website/images/testimony-2.jpg'%}" alt="Faraz" style="width:100%">
+      <img src="{% static 'website/images/testimony-2.jpg'%}"  id="img" alt="Faraz" style="width:100%">
       <div class="container  w3-hover-shadow">
         <h2>Faraz Kahn</h2>
          <p class="title text-white">Graphics designer</p>

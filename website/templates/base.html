@@ -62,7 +62,7 @@
 
 			<div class="collapse navbar-collapse" id="ftco-nav">
 				<ul class="navbar-nav ml-auto">
-					<li class="nav-item active"><a href="{% url 'index' %}" class="nav-link"">Home</a></li>
+					<li class="nav-item active"><a href="{% url 'index' %}" class="nav-link">Home</a></li>
 					{% comment %} <li class="nav-item"><a href="{% url 'services' %}" class="nav-link">Services</a></li> {% endcomment %}
 					
 
@@ -142,6 +142,17 @@
 
 }
 
+.figure{ margin: 0px;
+        border-radius: 30%;
+        }
+.logo{
+  width:130px;
+  margin:0 auto 35px;
+  margin-left: 10px;
+ 
+  overflow: hidden;
+}
+
 </style>
 
 <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
@@ -177,7 +188,10 @@ function topFunction() {
 			<div class="row mb-5">
 				<div class="col-md">
 					<div class="ftco-footer-widget mb-4">
-						<h2 class="ftco-footer-logo">Encoder |\<span>| Apps</span></h2>
+						<h2 class="ftco-footer-logo">
+						 <figure class="logo animated fadeInDown delay-07s">
+							<a href="{% url 'index' %}"><img src="{% static 'website/images/ena1.png' %}" class="img-fluid" alt=""></a> 
+							</figure></h2>
 						<p>Transforming Your Ideas, <strong>Digitally</strong>
 							<br>
 							Experienced for<br>
