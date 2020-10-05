@@ -1,0 +1,117 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title%} Services {% endblock %}
+
+{%block content%}
+    
+    
+    <style>
+
+   *{
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans",sans-serif;
+    box-sizing: border-box;
+}
+
+#section{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f1f1;
+}
+
+.about-section1{
+    background: url('{% static 'website/images/pic.jpg' %}') no-repeat left;
+    background-size: 55%;
+    background-color: #fdfdfd;
+    overflow: hidden;
+    padding: 100px 0;
+}
+
+.inner-container1{
+    width: 55%;
+    float: right;
+    background-color: #fdfdfd;
+    padding: 150px;
+}
+
+.inner-container1 h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.text1{
+    font-size: 13px;
+    color: #545454;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+.skills1{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+@media screen and (max-width:1200px){
+    .inner-container1{
+        padding: 80px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .about-section1{
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .inner-container1{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .about-section1{
+        padding: 0;
+    }
+    .inner-container1{
+        padding: 60px;
+    }
+}
+
+    </style>
+
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('{% static 'website/images/bg_3.jpg' %}');" data-stellar-background-ratio="0.5">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row no-gutters slider-text align-items-end justify-content-center">
+        <div class="col-md-9 ftco-animate pb-5 text-center">
+          <h1 class="mb-3 bread">Services</h1>
+            <p class="breadcrumbs"><span class="mr-2"><a href="{% url 'index' %}">Home <i class="fa fa-chevron-right"></i></a></span> <span class="mr-2"><a href="{% url 'services' %}"> Services <i class="fa fa-chevron-right"></i></a><span> AI <i class="fa fa-chevron-right"></i></span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section id="section1">
+    <div class="about-section1">
+        <div class="inner-container1">
+            <h1>Artificial Intelligence</h1>
+            <p class="text1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus velit ducimus, enim inventore earum, eligendi nostrum pariatur necessitatibus eius dicta a voluptates sit deleniti autem error eos totam nisi neque voluptates sit deleniti autem error eos totam nisi neque.
+            </p>
+            <div class="skills1">
+                <span id="span1">Web Design</span>
+                <span id="span1">Photoshop & Illustrator</span>
+                <span id="span1">Coding</span>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

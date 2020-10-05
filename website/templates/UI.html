@@ -1,0 +1,127 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title%} Services {% endblock %}
+
+{%block content%}
+    
+    
+    <style>
+
+   *{
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans",sans-serif;
+    box-sizing: border-box;
+}
+
+#section{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:  #4ca1af; /*1 change*/
+}
+
+.about-section1{
+    background: url('{% static 'website/images/pic.jpg' %}') no-repeat left;
+    background-size: 55%;
+    background-color: cyan;/*2nd change*/
+    overflow: hidden;
+    padding: 100px 0;
+}
+
+.inner-container1{
+    width: 55%;
+    float: right;
+    background: linear-gradient(to right, #904e95, #e96443); /* 3rd change */
+    padding: 150px;
+}
+
+.inner-container1 h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.text1{
+    font-size: 13px;
+    color: Blue;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+    font-size: 18px;
+    /* edited */
+}
+
+.skills1{
+    display: flex;
+
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 14px;
+    color: Cyan;
+    /* edited */
+}
+
+@media screen and (max-width:1200px){
+    .inner-container1{
+        padding: 80px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .about-section1{
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .inner-container1{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .about-section1{
+        padding: 0;
+    }
+    .inner-container1{
+        padding: 60px;
+    }
+}
+
+    </style>
+
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('{% static 'website/images/bg_3.jpg' %}');" data-stellar-background-ratio="0.5">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row no-gutters slider-text align-items-end justify-content-center">
+        <div class="col-md-9 ftco-animate pb-5 text-center">
+          <h1 class="mb-3 bread">Services</h1>
+          <p class="breadcrumbs">
+            <span class="mr-2"><a href="{% url 'index' %}">Home <i class="fa fa-chevron-right"></i></a></span> <span class="mr-2"><a href="{% url 'services' %}"> Services <i class="fa fa-chevron-right"></i></a><span> UI <i class="fa fa-chevron-right"></i></span></p>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section id="section1">
+    <div class="about-section1">
+        <div class="inner-container1">
+            <h1>User Interface</h1>
+            <p class="text1">
+                Many large companies might not have the skills in-house to achieve the GUI design quality they want. By working with
+                <span>Encoder N APPS</span>, we’ll help you create a solution that is functional and high-quality. <span>Encoder N APPS</span> is an innovative UI design company
+                — one of India's leading startup firms in the space. We specialize in graphical user interface design and development, and
+                we work hard to build customized solutions that make the most sense for your particular needs.
+            </p>
+            <div class="skills1">
+                <span id="span1">Look & Feel Framework</span>
+                <span id="span1">Photoshop & Illustrator</span>
+                <span id="span1">Coding</span>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

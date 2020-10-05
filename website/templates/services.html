@@ -21,7 +21,8 @@
       <div class="row no-gutters slider-text align-items-end justify-content-center">
         <div class="col-md-9 ftco-animate pb-5 text-center">
           <h1 class="mb-3 bread">Services</h1>
-          <p class="breadcrumbs"><span class="mr-2"><a href="{% url 'index' %}">Home <i class="fa fa-chevron-right"></i></a></span> <span>Services <i class="fa fa-chevron-right"></i></span></p>
+          <p class="breadcrumbs"><span class="mr-2"><a href="{% url 'index' %}">Home <i class="fa fa-chevron-right"></i></a></span> 
+          <span>Services <i class="fa fa-chevron-right"></i></span></p>
         </div>
       </div>
     </div>
@@ -230,7 +231,7 @@
       <div class="content">
         <h3>UI/UX</h3>
           <p>You Need User Interface!<br> No Problem! We are Here.</p>
-        <a href="javascript:void(0);" title="" id="con_a">Read More</a>
+        <a href="{% url 'UI' %}" title="" id="con_a">Read More</a>
       </div>
       </div>
 
@@ -241,7 +242,7 @@
         <div class="content">
           <h3>App Development</h3>
         <p>Our Professional team robust and scalable mobile app development services for iPhone, iPad and Android platform.</p>
-          <a href="javascript:void(0);" title="It will work later on!" id="con_a">Read More</a>
+          <a href="{% url 'AppDevelopment' %}" title="It will work later on!" id="con_a">Read More</a>
         </div>
       </div>
 
@@ -252,7 +253,7 @@
         <div class="content">
           <h3>Software Development</h3>
           <p>We develop what you need!</p>
-          <a href="javascript:void(0);" title="It will work later on!" id="con_a">Read More</a>
+          <a href="{% url 'SoftwareDevelopment' %}" title="It will work later on!" id="con_a">Read More</a>
         </div>
       </div>
 
@@ -264,7 +265,7 @@
         <div class="content">
           <h3>Digital Marketing</h3>
           <p>Give Your Business Wings to Fly with Our Digital Marketing Solutions</p>
-          <a href="javascript:void(0);" title="It will work later on!" id="con_a">Read More</a>
+          <a href="{% url 'DigitalMarketing' %}" title="It will work later on!" id="con_a">Read More</a>
         </div>
       </div>
 
@@ -275,7 +276,8 @@
         <div class="content">
           <h3>Network Security</h3>
           <p>We help to secure every thing!</p>
-          <a href="javascript:void(0);" title="It will work later on!" id="con_a">Read More</a>
+          {% comment %} <a href="javascript:void(0);" title="It will work later on!" id="con_a">Read More</a> {% endcomment %}
+          <a href="{% url 'NetworkSecurity' %}" title="It will work later on!" id="con_a">Read More</a>
         </div>
       </div>
 
@@ -288,7 +290,7 @@
           <h3>Artificial Intelligence</h3>
           <p>From a Business Perspective
               We innovate your company with AI</p>
-          <a href="javascript:void(0);" title="It will work later on!" id="con_a">Read More</a>
+          <a href="{% url 'AI' %}" title="It will work later on!" id="con_a">Read More</a>
         </div>
       </div>
     </div>

@@ -62,24 +62,46 @@ def about(request):
 	return render(request, 'about.html', {})
 
 
-def blog_single(request):
-	return render(request, 'blog-single.html', {})
+# def blog_single(request):
+# 	return render(request, 'blog-single.html', {})
 
 
-def blog(request):
-	return render(request, 'blog.html', {})
+# def blog(request):
+# 	return render(request, 'blog.html', {})
 
 
-def cases(request):
-	return render(request, 'cases.html', {})
+# def cases(request):
+# 	return render(request, 'cases.html', {})
 
 
 def services(request):
 	return render(request, 'services.html', {})
 
 
-def cards(request):
-	return render(request, 'cards.html', {})
+# def cards(request):
+# 	return render(request, 'cards.html', {})
+
+
+def WebDevelopment(request):
+    	return render(request, 'WebDevelopment.html', {})
+
+def AI(request):
+    	return render(request, 'AI.html', {})
+
+def AppDevelopment(request):
+    	return render(request, 'AppDevelopment.html', {})
+
+def DigitalMarketing(request):
+    	return render(request, 'DigitalMarketing.html', {})
+
+def NetworkSecurity(request):
+    	return render(request, 'NetworkSecurity.html', {})
+
+def SoftwareDevelopment(request):
+    	return render(request, 'SoftwareDevelopment.html', {})
+
+def UI(request):
+    	return render(request, 'UI.html', {})
 
 
 
