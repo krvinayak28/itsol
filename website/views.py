@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.core.mail import send_mail
 from decouple import config
 # from .models import Post
+from django.http import HttpResponse
 from django.contrib.auth.models import User
 from django.views.generic import ListView 
 from django.views.generic.edit import CreateView # new
@@ -130,6 +131,13 @@ def SoftwareDevelopment(request):
 
 def UI(request):
     	return render(request, 'UI.html', {})
+
+
+def error_404_view(request, exception):
+    data = {"name": "ThePythonDjango.com"}
+    return render(request,'myapp/error_404.html', data)
+
+	# Error 404 page
 
 
 
