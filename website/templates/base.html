@@ -185,8 +185,8 @@ function topFunction() {
 							</figure></h2>
 						<p>Transforming Your Ideas, <strong>Digitally</strong>
 							<br>
-							Experienced for<br>
-							CBA</p>
+							Experienced for-<br>
+							<i class="fa fa-laptop fa-lg" style="color: #339af0;" aria-hidden="true">Computer Based Assesments</p></i>
 						<ul class="ftco-footer-social list-unstyled mt-2">
 							<li class="ftco-animate"><a href="https://twitter.com/encodernapps" target="_blank" rel="noopener noreferrer"><span class="fa fa-twitter"></span></a></li>
 							<li class="ftco-animate"><a href="https://facebook.com/encodernapps" target="_blank" rel="noopener noreferrer"><span class="fa fa-facebook"></span></a></li>
@@ -198,8 +198,9 @@ function topFunction() {
 					<div class="ftco-footer-widget mb-4 ml-md-5">
 						<h2 class="ftco-heading-2">Explore</h2>
 						<ul class="list-unstyled">
+							<li><a href="{% url 'index' %}" class="py-2 d-block">Home</a></li>
 							<li><a href="{% url 'about' %}" class="py-2 d-block">About</a></li>
-							<li><a href="{% url 'contact' %}" class="py-2 d-block">Contact</a></li>
+							{% comment %} <li><a href="{% url 'contact' %}" class="py-2 d-block">Contact</a></li> {% endcomment %}
 							<li><a href="{% url 'services' %}" class="py-2 d-block">What We Do</a></li>
 							{% comment %} <li><a href="#" class="py-2 d-block">Plans &amp; Pricing</a></li>
 							<li><a href="#" class="py-2 d-block">Refund Policy</a></li> {% endcomment %}
@@ -230,7 +231,8 @@ function topFunction() {
 				<div class="col-md-12 text-center">
 
 					<p><!-- Link back to Encoder N Apps can't be removed. Template is licensed under CC BY 3.0. -->
-						Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true">Encoder <span>N Apps</span></i> &amp; created by Vinayak Kumar.
+						Copyright &copy;<script>document.write(new Date().getFullYear());</script> 
+						All rights reserved | This website is property of <i class="fa fa-heart" fa-lg" style="color: #339af0;"aria-hidden="true"><a href="{% url 'index' %}" target="_blank" rel="noopener noreferrer">Encoder <span>N Apps</span></a></i> &amp; created by <i style="color:#339af0;"> <a href="https://www.linkedin.com/krvinayak28" target="_blank" rel="noopener noreferrer">Vinayak Kumar.</a></i>
 					</div>
 				</div>
 			</div>
